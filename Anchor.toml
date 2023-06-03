@@ -1,0 +1,27 @@
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+reward_center = "rwdLstiU8aJU1DPdoPtocaNKApMhCFdCg283hz8dd3u"
+
+[programs.devnet]
+reward_center = "rwdLstiU8aJU1DPdoPtocaNKApMhCFdCg283hz8dd3u"
+
+[programs.testnet]
+reward_center = "rwdLstiU8aJU1DPdoPtocaNKApMhCFdCg283hz8dd3u"
+
+[programs.mainnet]
+reward_center = "rwdLstiU8aJU1DPdoPtocaNKApMhCFdCg283hz8dd3u"
+
+[[test.genesis]]
+address = "rwdLstiU8aJU1DPdoPtocaNKApMhCFdCg283hz8dd3u"
+program = "program/target/deploy/hpl_reward_center.so"
+
+[workspace]
+members = [
+  "program"
+]
